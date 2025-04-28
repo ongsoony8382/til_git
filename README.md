@@ -186,26 +186,54 @@ git show 커밋아이디
 - Date : 날짜
 - 메시지 : 상세 내용
 
-### 4.7. 브랜치 작업해보기 
+### 4.7. 브랜치 작업해 보기
 
-- `나뭇가지` 라는 의미로 원 줄기로부터 파생되는 것을 말함.
+- `나뭇가지` 라는 의미로 원 줄기로 부터 파생되는 것을 말함.
 - 원 `소스`로 부터 파생한 새롭게 `분기한 소스` 관리를 말함.
-- 브랜치를 생성시에는 add 와 commit 이 완료되어야 함. 
+- 브랜치를 생성시에는 add 와 commit 이 완료되어야 함.
 
 #### 4.7.1. 브랜치 생성하기
 
 ```bash
-git add . 
-git commit -m "[docs]: 브랜치 실습 test 생성하기"
+git add .
+git commit -m "[docs]:브랜치 실습 test 생성하기"
 git branch test
+```
+
+#### 4.7.2. 브랜치 목록보기
+
+```bash
+git branch -v
 ```
 
 #### 4.7.2. 브랜치 이동하기
 
+```bash
+git switch test
+```
+
 #### 4.7.3. 브랜치 삭제하기
+
+```bash
+git branch -D test
+git branch -v
+```
 
 #### 4.7.4. 브랜치 합치기
 
+- 브랜치를 하나로 합쳐주기
+- 주의 사항 : `main 브랜치에서 test 브랜치 합쳐줄 겁니다.`
 
+```bash
+git add .
+git commit -m "[docs]:브랜치 실습 test 합치기"
+```
+
+```bash
+git merge 합쳐주고자하는 브랜치명
+```
+
+### 4.8. 깃 브랜치 충돌 해결해 보기 
+- 깃 브랜치를 merge 하면 많이 발생합니다.
 
 # GitHub
