@@ -291,3 +291,8 @@ git remote -v
 git add .
 git commit -m "[docs]: 최초등록"
 ```
+- 소스 업로드를 `push 한다` 라고 합니다. 
+
+```bash
+git push -u origin main 
+```
