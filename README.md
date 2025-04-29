@@ -319,6 +319,7 @@ git remote remove 원격이름
 ```bash
 git remote add 원격이름 https주소
 ```
+
 - 이름 바꾸기
 
 ```bash
@@ -331,4 +332,37 @@ git remote rename 옛이름 새이름
  git add .
  git commit -m "[docs]:깃학습"
  git push origin main
- ```
+```
+
+### 5. 깃허브의 소스를 복사(Clone)해서 작업하는 법
+
+- 깃허브 주소를 주의하셔야 합니다.
+- 코드 소스 기준은 `https` 로 진행 중입니다.
+- 코드 소스 기준이 `ssh` 면 인증을 다시 처리하는 과정이 필요.
+
+### 5.1. 실습
+- 서울로 출장을 갔다. (PC없이)
+- 서울 사무소에 PC를 지급 받았다.
+- PC에 환경 설정 진행 (VSCode, Git)
+- /student/`test 폴더` 생성 
+- gitHub 사이트의 프로젝트를 `clone`한다. 
+- gitHub 사이트의 Repository를 `clone` 한다.
+
+### 5.2. clone
+
+```bash
+git clone 깃허브주소 . 
+```
+
+### 5.3. clone 이후의 작업
+
+```bash
+git status
+git branch -v
+git branch 새이름
+git switch 새이름
+작업진행
+git add . 
+git commit -m "작업내용"
+git push origin 브랜치명
+``` 
